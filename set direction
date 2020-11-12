@@ -1,0 +1,42 @@
+#include <iostream> 
+using namespace std; 
+  
+//declare enum 
+enum direction {UP, DOWN, LEFT, RIGHT}; 
+  
+int main(){ 
+      
+    char input; 
+     cout << "Press W, A, S or D" << endl; 
+     cin >> input;
+     input = toupper(input);  
+      
+    direction dir; 
+      
+    if(input == 'W')
+    { 
+         dir = UP;
+         cout << "Direction set to up" << endl; 
+     }
+     else if(input == 'A')
+     { 
+         dir = LEFT; 
+         cout << "Direction set to left" << endl; 
+     }
+     else if(input == 'S')
+     { 
+         dir = DOWN; 
+         cout << "Direction set to down" << endl; 
+     }
+     else if(input == 'D')
+     { 
+         dir = RIGHT; 
+         cout << "Direction set to right" << endl; 
+     }
+     else
+     { 
+         cout << "Can't you follow instructions?" << endl; 
+     } 
+      
+    return 0; 
+}
