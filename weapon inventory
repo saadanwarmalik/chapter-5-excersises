@@ -1,0 +1,45 @@
+#include <iostream>
+
+using namespace std;
+
+enum weaponlist
+
+{
+	fists,
+	knife,
+	sword,
+	gun,
+	
+};
+
+int main()
+{
+	weaponlist chosenweapon = fists;
+
+	int weapon;
+	cout<<"pick weapon=" << endl;
+	cin>>weapon;
+
+	switch (weapon)
+	{
+	case fists:
+		cout<<"you chose fists"<<endl;
+		break;
+
+	case knife:
+		cout<<"you chose knife"<<endl;
+		break;
+		
+	case sword:
+	    cout<<"you chose sword"<<endl;
+	    break;
+
+	case gun:
+		cout<<"you chose gun"<<endl;
+		break;
+
+	
+
+	}
+	return 0;
+}
