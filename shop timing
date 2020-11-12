@@ -1,0 +1,30 @@
+#include <iostream> 
+using namespace std; 
+  
+enum dayofweek {Monday = 1, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, }; 
+  
+int main(){ 
+     dayofweek day;
+     cout << "Welcome to Jake's Beer Emporium" << endl; 
+     cout << "Select day of week to view opening hours" << endl; 
+     cout << "1: Monday\n2: Tuesday\n3: Wednesday\n4: Thursday\n5: Friday\n6: Saturday\n7: Sunday" << endl; 
+     int input; 
+     cin >> input; 
+     switch(input){ 
+         case Monday: 
+             cout << "Sorry We're Closed" << endl; 
+             break; 
+         case Tuesday: 
+         case Wednesday: 
+         case Thursday:
+             cout << "Open 11am - 10pm" << endl; 
+             break; 
+         case Friday: 
+         case Saturday: 
+         case Sunday: 
+             cout << "Open 11am - 11.30pm" << endl; 
+             break; 
+     } 
+      
+    return 0; 
+} 
